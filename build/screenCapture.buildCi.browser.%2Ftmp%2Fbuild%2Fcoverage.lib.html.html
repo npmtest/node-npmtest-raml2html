@@ -195,7 +195,7 @@
     <h1>Code coverage report for <span class="entity">node-npmtest-raml2html/node_modules/raml2html/index.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">21.43% <small>(12 / 56)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">22.03% <small>(13 / 59)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
         Branches: <span class="metric">4.76% <small>(1 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -204,7 +204,7 @@
         Functions: <span class="metric">0% <small>(0 / 7)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">21.82% <small>(12 / 55)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">22.41% <small>(13 / 58)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
@@ -353,7 +353,11 @@
 139
 140
 141
-142</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+142
+143
+144
+145
+146</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
@@ -362,35 +366,12 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -400,6 +381,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -503,6 +511,7 @@ const markdown = require('nunjucks-markdown');
 const marked = require('marked');
 const Minimize = require('minimize');
 const path = require('path');
+const fs = require('fs');
 &nbsp;
 /**
  * Render the source RAML object using the config's processOutput function
@@ -512,14 +521,15 @@ const path = require('path');
  *
  * @param {(String|Object)} source - The source RAML file. Can be a filename, url, or an already-parsed RAML object.
  * @param {Object} config
+ * @param {bool} validation - use validation (off by default)
  * @param {Function} config.processRamlObj
  * @returns a promise
  */
-<span class="fstat-no" title="function not covered">function render(source, config) {</span>
+<span class="fstat-no" title="function not covered">function render(source, config, validation) {</span>
 <span class="cstat-no" title="statement not covered">  config = config || {};</span>
 <span class="cstat-no" title="statement not covered">  config.raml2HtmlVersion = pjson.version;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return raml2obj.parse(source).then(ramlObj =&gt; {</span>
+<span class="cstat-no" title="statement not covered">  return raml2obj.parse(source, validation).then(ramlObj =&gt; {</span>
 <span class="cstat-no" title="statement not covered">    ramlObj.config = config;</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered">    if (config.processRamlObj) {</span>
@@ -537,10 +547,12 @@ const path = require('path');
 &nbsp;
 /**
  * @param {String} [mainTemplate] - The filename of the main template, leave empty to use default templates
- * @param {String} [templatesPath] - Optional, by default it uses the current working directory
  * @returns {{processRamlObj: Function, postProcessHtml: Function}}
  */
-<span class="fstat-no" title="function not covered">function getConfigForTemplate(mainTemplate, templatesPath) {</span>
+<span class="fstat-no" title="function not covered">function getConfigForTemplate(mainTemplate) {</span>
+<span class="cstat-no" title="statement not covered">  const templatesPath = path.dirname(fs.realpathSync(mainTemplate));</span>
+<span class="cstat-no" title="statement not covered">  const templateFile = path.basename(fs.realpathSync(mainTemplate));</span>
+&nbsp;
 <span class="cstat-no" title="statement not covered">  return {</span>
     processRamlObj<span class="fstat-no" title="function not covered">(ramlObj, config) {</span>
 <span class="cstat-no" title="statement not covered">      const renderer = new marked.Renderer();</span>
@@ -566,7 +578,7 @@ const path = require('path');
       };
 &nbsp;
       // Render the main template using the raml object and fix the double quotes
-<span class="cstat-no" title="statement not covered">      let html = env.render(mainTemplate, ramlObj);</span>
+<span class="cstat-no" title="statement not covered">      let html = env.render(templateFile, ramlObj);</span>
 <span class="cstat-no" title="statement not covered">      html = html.replace(/&amp;quot;/g, '"');</span>
 &nbsp;
       // Return the promise with the html
@@ -618,7 +630,7 @@ const path = require('path');
 <span class="cstat-no" title="statement not covered">    const templatesPath = path.dirname(</span>
       require.resolve(`${theme}/package.json`)
     );
-<span class="cstat-no" title="statement not covered">    return getConfigForTemplate('index.nunjucks', templatesPath);</span>
+<span class="cstat-no" title="statement not covered">    return getConfigForTemplate(path.join(templatesPath, 'index.nunjucks'));</span>
   }
 }
 &nbsp;
@@ -639,7 +651,7 @@ module.exports = {
 </tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Thu Apr 20 2017 15:04:33 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 26 2017 03:04:57 GMT+0000 (UTC)</div>
 </div>
 
 
