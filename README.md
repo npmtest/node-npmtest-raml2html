@@ -1,6 +1,6 @@
 # npmtest-raml2html
 
-#### basic test coverage for  [raml2html (v6.1.1)](https://github.com/raml2html/raml2html)  [![npm package](https://img.shields.io/npm/v/npmtest-raml2html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-raml2html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-raml2html.svg)](https://travis-ci.org/npmtest/node-npmtest-raml2html)
+#### basic test coverage for  [raml2html (v6.3.0)](https://github.com/raml2html/raml2html)  [![npm package](https://img.shields.io/npm/v/npmtest-raml2html.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-raml2html) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-raml2html.svg)](https://travis-ci.org/npmtest/node-npmtest-raml2html)
 
 #### RAML to HTML documentation generator
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-raml2html/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-raml2html/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-raml2html/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-raml2html/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-raml2html/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-raml2html/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-raml2html/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-raml2html/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-raml2html/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-raml2html/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-raml2html/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-raml2html/build/coverage.html/index.html)
 
@@ -35,11 +35,11 @@
 ```json
 
 {
-    "name": "raml2html",
-    "description": "RAML to HTML documentation generator",
-    "version": "6.1.1",
     "author": {
         "name": "Kevin Renskers"
+    },
+    "bin": {
+        "raml2html": "./bin/raml2html"
     },
     "bugs": {
         "url": "https://github.com/raml2html/raml2html/issues"
@@ -53,35 +53,50 @@
         "raml2obj": "5.x",
         "yargs": "7.1.x"
     },
+    "description": "RAML to HTML documentation generator",
     "devDependencies": {
         "eslint": "3.19.x",
         "eslint-plugin-prettier": "2.0.x",
         "prettier": "1.x"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "13cefc077afe4ed2086c8d3ffe81f5910ccbafcc",
+        "tarball": "https://registry.npmjs.org/raml2html/-/raml2html-6.3.0.tgz"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "files": [
+        "index.js",
+        "bin/raml2html"
+    ],
+    "gitHead": "9692d0dd6825abd6ac2e777445a5342b8cf0c207",
     "homepage": "https://github.com/raml2html/raml2html",
     "keywords": [
         "RAML"
     ],
     "license": "MIT",
     "main": "index.js",
+    "maintainers": [
+        {
+            "name": "mixedcase"
+        },
+        {
+            "name": "nickwb"
+        }
+    ],
+    "name": "raml2html",
+    "optionalDependencies": {},
+    "preferGlobal": true,
     "repository": {
         "type": "git",
         "url": "git://github.com/raml2html/raml2html.git"
     },
-    "preferGlobal": true,
     "scripts": {
         "lint": "eslint . --fix"
     },
-    "bin": {
-        "raml2html": "./bin/raml2html"
-    },
-    "files": [
-        "index.js",
-        "bin/raml2html"
-    ],
-    "engines": {
-        "node": ">=4"
-    }
+    "version": "6.3.0"
 }
 ```
 
