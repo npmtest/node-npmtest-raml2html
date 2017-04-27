@@ -105,7 +105,7 @@
 <tspan x="10" y="1642">  │   ├── camelcase@2.1.1 </tspan>
 <tspan x="10" y="1658">  │   └── window-size@0.1.4 </tspan>
 <tspan x="10" y="1674">  ├── nunjucks-markdown@2.0.1 </tspan>
-<tspan x="10" y="1690">  ├── raml2html-default-theme@2.0.0 </tspan>
+<tspan x="10" y="1690">  ├── raml2html-default-theme@2.1.0 </tspan>
 <tspan x="10" y="1706">  ├─┬ raml2obj@5.3.0 </tspan>
 <tspan x="10" y="1722">  │ ├── datatype-expansion@0.0.15 </tspan>
 <tspan x="10" y="1738">  │ └─┬ raml-1-parser@1.1.20 </tspan>
